@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold">Explore All Countries</h2>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md-8 mx-auto">
+      <div class="input-group shadow-sm">
+        <select class="form-select" style="max-width: 150px;" [(ngModel)]="searchType">
+          <option value="name">Name</option>
+          <option value="capital">Capital</option>
+          <option value="code">Code</option>
+        </select>
+        <input type="text" class="form-control" placeholder="Search for a country..." [(ngModel)]="searchText" />
+        <button class="btn btn-primary" (click)="search()">Search</button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="noResultFound" class="alert alert-warning text-center">
+    No country found. Try a different keyword!
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-lg-3 mb-4" *ngFor="let country of countries">
+      <div class="card h-100 p-3 text-center">
+        <h5 class="card-title text-truncate">{{ country.name.common }}</h5>
+        <a [routerLink]="['/country', country.cca3]" class="btn btn-outline-secondary btn-sm mt-auto">
+          View Details
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

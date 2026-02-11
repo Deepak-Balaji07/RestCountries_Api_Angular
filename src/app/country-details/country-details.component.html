@@ -1,0 +1,24 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card p-4 overflow-hidden">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center">
+            <img [src]="country?.flags.png" class="img-fluid rounded shadow-sm border" [alt]="country?.name.common" />
+          </div>
+          <div class="col-md-7">
+            <h1 class="display-5 fw-bold">{{ country?.name.common }}</h1>
+            <hr />
+            <div class="mb-2"><strong>🏛️ Capital:</strong> {{ country?.capital }}</div>
+            <div class="mb-2"><strong>🌎 Region:</strong> {{ country?.region }}</div>
+            <div class="mb-2"><strong>👥 Population:</strong> {{ country?.population | number }}</div>
+            
+            <a routerLink="/countries" class="btn btn-link mt-3 p-0 text-decoration-none">
+              ← Back to Countries
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
