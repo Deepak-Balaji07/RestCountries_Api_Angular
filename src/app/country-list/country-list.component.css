@@ -56,3 +56,52 @@ p {
   font-weight: bold;
   margin-top: 20px;
 } */
+
+
+
+/* Page container */
+.container {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+/* Search bar */
+.input-group {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.input-group .form-select,
+.input-group .form-control {
+  border-radius: 0;
+}
+
+.input-group .btn {
+  border-radius: 0;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+/* Country cards */
+.card {
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* View Details button */
+.card .btn {
+  border-radius: 20px;
+  font-weight: 600;
+}

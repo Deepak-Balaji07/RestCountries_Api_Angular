@@ -26,3 +26,40 @@ a {
   border-radius: 25px;
   font-weight: bold;
 } */
+
+
+/* Card wrapper */
+.card {
+  border-radius: 22px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Flag image */
+img {
+  border-radius: 18px;
+  max-height: 220px;
+  object-fit: cover;
+}
+
+/* Country name */
+h1 {
+  margin-bottom: 12px;
+}
+
+/* Info rows */
+.mb-2 {
+  font-size: 16px;
+  margin-bottom: 12px !important;
+}
+
+/* Back link */
+a {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+a:hover {
+  text-decoration: underline;
+}
